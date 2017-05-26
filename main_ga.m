@@ -41,12 +41,9 @@ end
 %% Then, choose which data file you wish to experiment with.
 % Below is the list of various data files with different number of cities:
 
-% loadatt48();         % 48 cities
+loadatt48();         % 48 cities
 % loadst70();          % 70 cities
 % loadgr96();          % 96 cities
-
-% I have chosen a data file from the above list
- loadatt48();
 
 %% prepare the distance matrix
 load('cities.mat');
@@ -54,21 +51,26 @@ xy = cities';
 
 % you should update the following code to obtain the average and 95%
 % confidence interval for each configuration of numGen
+
+records = []; % each row will contain: numGen, mean, 95% CI
 for numGen = 100:100:2000
+    fprintf('\n -----------\nNumber of generation: %d\n', numGen);
+    results = zeros(1,15);
     for runs = 1:15
         userConfig = struct('xy', xy, 'popSize', 200, 'numGen', numGen, 'crossProb', 0.25, 'mutProb', 0.5, 'eliteFract', 0.02);
         resultStruct = tsp_ga(userConfig);
-        
-        % the best tour found by GA
-        % fprintf('\nBest tour found by GA:\n');
-        % resultStruct.optRoute
-        
-        % the distance of the best tour
-        fprintf('\n Number of generations: %d \n Run number: %d \n The distance of the best tour = %d\n',numGen, runs, resultStruct.minDist);
-        
+        results(1,runs) = resultStruct.minDist;
+        % fprintf('\n Run number: %d \n The distance of the best tour = %d\n', runs, resultStruct.minDist);
     end
+    avg = mean(results);
+    dev = std(results);
+    dev_pop = dev/sqrt(15);
+    records = [records; numGen avg dev_pop];
+    fprintf('\n Average distance: %f with 95 percent CI (%f, %f) \n', avg, avg-dev_pop*2, avg+dev_pop*2); 
 end
-
 % Implement your plotting here, using the average and confidence interval results:
 % plots ...
+errorbar(records(:,1), records(:,2), records(:,3)*2);
+xlabel('Number of generations');
+ylabel('Average mean distance');
 
