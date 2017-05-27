@@ -1,0 +1,101 @@
+
+ -----------
+Number of generation: 100
+
+ Average distance: 2329.604469 with 95 percent CI (2276.116784, 2383.092154) 
+
+ -----------
+Number of generation: 200
+
+ Average distance: 2059.906921 with 95 percent CI (2012.422279, 2107.391564) 
+
+ -----------
+Number of generation: 300
+
+ Average distance: 1883.370839 with 95 percent CI (1846.232260, 1920.509418) 
+
+ -----------
+Number of generation: 400
+
+ Average distance: 1745.201265 with 95 percent CI (1684.538072, 1805.864458) 
+
+ -----------
+Number of generation: 500
+
+ Average distance: 1697.703307 with 95 percent CI (1657.009770, 1738.396844) 
+
+ -----------
+Number of generation: 600
+
+ Average distance: 1650.008072 with 95 percent CI (1607.444863, 1692.571282) 
+
+ -----------
+Number of generation: 700
+
+ Average distance: 1582.121522 with 95 percent CI (1525.568550, 1638.674494) 
+
+ -----------
+Number of generation: 800
+
+ Average distance: 1577.571907 with 95 percent CI (1535.702912, 1619.440903) 
+
+ -----------
+Number of generation: 900
+
+ Average distance: 1523.976142 with 95 percent CI (1497.553011, 1550.399272) 
+
+ -----------
+Number of generation: 1000
+
+ Average distance: 1473.510466 with 95 percent CI (1437.414935, 1509.605998) 
+
+ -----------
+Number of generation: 1100
+
+ Average distance: 1481.254591 with 95 percent CI (1439.138484, 1523.370697) 
+
+ -----------
+Number of generation: 1200
+
+ Average distance: 1472.310726 with 95 percent CI (1434.930236, 1509.691217) 
+
+ -----------
+Number of generation: 1300
+
+ Average distance: 1472.097142 with 95 percent CI (1439.537332, 1504.656952) 
+
+ -----------
+Number of generation: 1400
+
+ Average distance: 1466.488041 with 95 percent CI (1423.414362, 1509.561721) 
+
+ -----------
+Number of generation: 1500
+
+ Average distance: 1441.028925 with 95 percent CI (1413.804162, 1468.253688) 
+
+ -----------
+Number of generation: 1600
+
+ Average distance: 1419.614995 with 95 percent CI (1384.219451, 1455.010540) 
+
+ -----------
+Number of generation: 1700
+
+ Average distance: 1411.197323 with 95 percent CI (1375.483134, 1446.911511) 
+
+ -----------
+Number of generation: 1800
+
+ Average distance: 1422.899934 with 95 percent CI (1375.854204, 1469.945664) 
+
+ -----------
+Number of generation: 1900
+
+ Average distance: 1395.472996 with 95 percent CI (1366.287300, 1424.658692) 
+
+ -----------
+Number of generation: 2000
+
+ Average distance: 1386.792429 with 95 percent CI (1349.259034, 1424.325823) 
+>>
