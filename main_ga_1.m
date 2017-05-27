@@ -42,7 +42,7 @@ end
 % Below is the list of various data files with different number of cities:
 
 % loadatt48();         % 48 cities
-loadst70();          % 70 cities
+ loadst70();          % 70 cities
 % loadgr96();          % 96 cities
 
 %% prepare the distance matrix
@@ -63,7 +63,7 @@ xlabel('Iteration');
 ylabel('Average fitness');
 
 % Answers:
-% 48 cities: 
-% 70 cities:  
+% 48 cities: 5.333535e+04
+% 70 cities: 1.349984e+03 
 % 96 cities: 7.213370e+02
 
